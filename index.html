@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+ 
+    <!-- stylesheet -->
+     <link rel="stylesheet" href="./style.css">
+     <!-- fav icons -->
+      <link rel="icon" type="image/x-icons"href="data:image/png;base64,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">
+</head>
+<body>
+    <div id="container">
+    <nav id="navbar">
+        <img id="logo" src="./images/img1.jpeg" alt="no image">
+        <ul>
+        <li class="listitem"><a href="#container">HOME</a></li>
+        <li class="listitem"><a href="#about">ABOUT</a></li>
+        <li class="listitem"><a href="#skill">SKILL</a></li>
+        <li class="listitem"><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <!-- home -->
+    <section id="home">
+     <div id="title">
+    <h1>I'm Ana <span style id="lastname">Steel</span></h1>
+    <p>This is my official portfolio website to describe all<br/>Details and work experiance in Web Development</p>
+    <br><br><br>
+    <a href="./images/resume.pdf" download>DOWNLOAD CV</a>
+    </div>
+    <div id="images">
+        <img class="imageGroup" id="shape" src="./images/background.png" alt="no image">
+        <img class= "imageGroup"id="girl" src="./images/girlimage.png" alt="no image">
+   </div>
+   </section>
+   <!-- about -->
+   <section id="about">
+    <div class="heading">
+        <h2>About Me</h2>
+        <p>Introduction</p>
+    </div>
+    <div id="content">
+      <div id="content_img">
+          <img  src="./images/img3.jpeg" alt="no image" >
+      </div>
+       <div id="content_details">
+         <div class="info">
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo doloremque deleniti non earum ab, obcaecati, unde ratione consequuntur aspernatur quaerat qui incidunt ipsum voluptates ullam. Ut voluptates consequatur quod alias?</p>
+             <div id="information">
+               <div class="info">
+                <i class="fa-solid fa-user"></i>
+                <span>Ana Steel</span>
+             </div>
+            <div class="info">
+            <i class="fa-solid fa-phone"></i>
+            <span>9087654321</span>
+            </div>
+            <div class="info">
+            <i class="fa-solid fa-envelope"></i>
+            <span>anasteel@gmail.com</span>
+            </div>
+            <div class="info">
+            <i class="fa-brands fa-github"></i>
+            <span>anasteel</span>
+            </div>
+          </div>
+       </div>
+    </div>
+    </section>
+    <!-- SKILL -->
+    <section id="skill">
+        <div class="heading">
+            <h1>Skills</h1>
+            <p>My skills</p>
+        </div>
+        <div id="skill_container">
+            <div id="progress_bar">
+            <div class="bar_container">
+               <h3>HTML</h3>
+                <span>95%</span>
+                <div class="bar"></div>
+                <div class="bar" id="html_bar"></div>
+            </div>
+            <div class="bar_container">
+                <h3>CSS</h3>
+                <span>88%</span>
+                <div class="bar"></div>
+                <div class="bar" id="css_bar"></div>
+            </div>
+            <div class="bar_container">
+                <h3>JS</h3>
+                <span>89%</span>
+                <div class="bar"></div>
+                <div class="bar" id="js_bar"></div>
+            </div>
+            <div class="bar_container">
+                <h3>REACT</h3>
+                <span>85%</span>
+                <div class="bar"></div>
+                <div class="bar"id="react_bar"></div>
+            </div>
+            </div>
+                <div id="skill_img">
+                 <img src="./images/img4.jpeg" alt="no image">
+                
+            </div>
+        </div>
+        <!-- contact -->
+    </section>
+    <section id="contact">
+        <div class="heading">
+            <h1>Contact</h1>
+            <p>My Contact</p>
+        </div>
+        <div class="icon_set">
+            <div class="icon">
+            <a href=""target="_blank"><i class="fa-brands fa-linkedin-in fa-2x "></i></a>
+            </div>
+            <div class="icon">
+                <a href=""target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+            </div>
+            <div class="icon">
+                <a href=""target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
+            </div>
+            <div class="icon">
+                <a href="https://wa.me/9207464320" target="_blank"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+            </div>
+            <div class="icon">
+                <a href=""target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            </div>
+            <div class="icon">
+                <a href=""target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        
+            <p>©My portfolio Design 2023.All right reserved ®Ana Steel</p>
+            <div class="up-arrow">
+            <a href="#container"><i class="fa-solid fa-arrow-up fa-2x"></i></a>
+           </div>
+         
+    </footer>
+</div>
+</body>
+</html>
